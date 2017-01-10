@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="dome.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<h4>js</h4>
+			<ul>
+				<li>是动态的、基于原型的脚本语言。</li>
+				<li>值类型有五种：分别是数字、布尔、字符串、Null、Undefine。引用类型：对象、数组、函数。</li>
+				<li>JS的渲染是自上而下，从左到右。</li>
+			</ul>
+			<h4>函数</h4>
+			<ul>
+				<li>常用函数声明:<pre>function fun(){}</pre></li>
+				<li>表达式:<pre>var fun = function(){}</pre></li>
+				<li>匿名声明(也是立即执行函数):<pre>(function(){})()</pre></li>
+				<li>动态声明:<pre>var fun = new function("a=1","b=1","return a+b")</pre></li>
+				<li>arguments是函数当中的伪数组。</li>
+				<li>函数的参数可以是函数名，同时一个函数也可以在另一个函数内部调用。</li>
+				<li>函数是JS的一等公民，函数式声明会被提前</li>
+			</ul>
+			<h4>事件调用</h4>
+			<ul>
+				<li>常用方法在标签内部直接调用:<pre>div id="" onclick="fun()"</pre></li>
+				<li>外部调用:<pre>div.addEventlistener("click",fun,true)</pre></li>
+				<li>另一种:<pre>var div = document.getElementById("box");<br>div.onclick=fun</pre></li>
+			</ul>
+			<h4>DOM和BOM</h4>
+			<ul>
+				<li>DOM一般是指HTML，DOM也是W3C里面的Dom Document Object Model。</li>
+				<li>BOM一般是指浏览器对象，它的核心对象的Windows。</li>
+			</ul>
+			<h4>闭包</h4>
+			<ul>
+				<li>访问一个函数内部声明的一个函数，例子如下:<pre>function fun(){<br>var num = 1;<br />return num ;<br />}<br>console.log(fun())</pre></li>
+			</ul>
+			<h4>全局变量和局部变量</h4>
+			<ul>
+				<li>this指向：1、指向标签 2、指向windows 3、指向对象。</li>
+				<li>"this"指向的是调用时，所处的环境对象。</li>
+			</ul>
+			<h4>权限提升</h4>
+			<ul>
+				<li>例：<pre>var fun = function(){<br />console.log("111");<br />}<br>
+				function fun(){<br />console.log("222");<br />}
+				<br>fun();会出现111.</pre></li>
+			</ul>
+			<h4>apply和call</h4>
+			<ul>
+				<li>可以改变函数中this的指向，使用方式为fun.apply(obj,[i])</li>
+			</ul>
+		</div>
+	</body>
+</html>
