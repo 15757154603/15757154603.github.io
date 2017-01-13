@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="dome.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<h4>内置对象</h4>
+			<ul>
+				<li>分为三种：分别是Array、Date、Error。</li>
+				<li>arr.push()指在数组末尾增加数据；arr.unshift()指在数组第一个增加数据。</li>
+				<li>str.splice("a")指在str字符串中以a元素分开两个或者多个字符串；str.contact()连接字符串。</li>
+			</ul>
+			<h4>小知识</h4>
+			<ul>
+				<li>for(){}数组循环 ；for in 非数组循环；sort 进行数组的升序排列。</li>
+				<li>数组的升序排列：<pre>arr.sort(function(a,b){<br>return a-b;<br>})</pre></li>
+				<li>数组的降序排列：<pre>arr.sort(function(a,b){<br>return b-a;<br>})</pre></li>
+			</ul>
+			<h4>Error</h4>
+			<ul>
+				<li>浏览器内置的报错对象。</li>
+				<li>err.message，可以获取Error的报错信息。</li>
+				<li>ReferenceError引用错误。</li>
+				<li>RangeError引用错误。</li>
+				<li>TypeError类型错误。</li>
+				<li>SyntaxError语法错误。</li>
+			</ul>
+			<h4>小知识</h4>
+			<ul>
+				<li>try是捕获错误，catch是处理错误<pre>try{<br />}catch(){<br />}</pre></li>
+				<li>clientX、clientY时间被触发时鼠标指针的位置。</li>
+				<li>obj.preventDefault;取消浏览器默认行为</li>
+			</ul>
+			<h4>事件</h4>
+			<ul>
+				<li>W3C推荐写法：document.addEventlistener("要触发的事件，去掉on"，函数或者函数名在外部引用(注意去掉括号)，false)</li>
+				<li>日常推荐写法：document.on+事件名=function(){}</li>
+			</ul>
+			<h4>事件流</h4>
+			<ul>
+				<li>分为：事件冒泡和事件捕获</li>
+			</ul>
+		</div>
+	</body>
+</html>
