@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="dome.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<h4>设计模式---工厂模式</h4>
+			<ul>
+				<li>例子如下：<br><pre>function factory(name,age,sex){<br />var obj ={}<br />obj.name=name;<br />obj.age=age;<br />obj.sex=sex;<br />obj.fun=function(){<br>console.log("工厂方法");<br>}<br />return obj；<br>}<br>var student = factory("张三",100,"男")</pre></li>
+			</ul>
+			<h4>AJAX</h4>
+			<ul>
+				<li>英文全称Asynchronous JavaScript And Xml(异步于Javascript和Xml)。是一种无需重新加载整个网页的情况下，能够更新部分网页的技术。</li>
+				<li>XmlHttpRequest是AJAX的基础对象。用于在后台与服务器交换数据。</li>
+				<li>所有现代浏览器均支持 XMLHttpRequest 对象（IE5 和 IE6 使用 ActiveXObject）。</li>
+			</ul>
+			<h4>创建XmlHttpRequest对象</h4>
+			<ul>
+				<li>新版本中：var xhr =new XMLHttpRequest();</li>
+				<li>IE5、6中：var xhr =new ActiveXObject("Microsoft.XMLHTTP");</li>
+			</ul>
+			<h4>接受请求</h4>
+			<ul>
+				<li>onreadystatechange属性；每当 readyState 属性改变时，就会调用该函数。</li>
+				<li>readyState ：存有 XMLHttpRequest 的状态信息。从 0 到 4 发生变化。0: 请求未初始化 1: 服务器连接已建立 2: 请求已接收 3: 请求处理中 4: 请求已完成，且响应已就绪；接收只能接收到2/3/4.</li>
+				<li>status：200: "OK" 404: 未找到页面</li>
+			</ul>
+			<h4>发送请求</h4>
+			<ul>
+				<li>open(method,url,async) method：请求的类型；GET 或 POST ；url：文件在服务器上的位置 ；async：true（异步）或 false（同步）默认为true。</li>
+				<li>GET 更快捷更便捷，在大多数情况下使用；POST用于向服务器发送大量数据，更新文件或数据库。</li>
+				<li>send(string)；string：仅用于 POST 请求。</li>
+			</ul>
+			<h4>注意同源策略</h4>
+			<ul>
+				<li>1、要域名相同；2、端口相同；3、协议相同；三者只要有一个不同，就是不同源/同域。</li>
+			</ul>
+			<h4>AJAX事件</h4>
+			<ul>
+				<li>xhr.timeout响应时间，以毫秒为单位。<br>xhr.onload处理数据。<br>xhr.onerror处理错误数据。<br>xhr.ontimeout超时之后进行的事件。<br>xhr.responseType="nav";例如：txt.xml.json.html.js.blob<br></li>
+			</ul>
+			<h4>setRequestheader()</h4>
+			<ul>
+				<li>它有两个参数，分别是header和value，分别代表http的头和值</li>
+			</ul>
+			<h4>服务器响应</h4>
+			<ul>
+				<li>responseText	获得字符串形式的响应数据。</li>
+				<li>responseXML	获得 XML 形式的响应数据。</li>
+			</ul>
+		</div>
+	</body>
+</html>
