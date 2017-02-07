@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="dome.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<h4>JavaScript复习</h4>
+			<ul>
+				<li>JavaScript有五种值类型（基本类型）：分别为Number、String、Boolean、undefined、null。其他的都是引用类型。</li>
+			</ul>
+			<h4>jQuery</h4>
+			<ul>
+				<li>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。</li>
+				<li>jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。</li>
+				<li>它的核心功能是查询</li>
+			</ul>
+			<h4>jQuery的引用</h4>
+			<ul>
+				<li>它可以从官网里进行下载，然后再javascript中引用。这种是本地引入的方式。</li>
+				<li>还可以从各大官网里使用它们的CDN。比如：google、Microsoft、baidu、阿里。</li>
+			</ul>
+			<h4>jQuery的使用</h4>
+			<ul>
+				<li>$=jQuery.jQuery等document准备就绪后才能执行。</li>
+				<li>$(document).ready(function)==$(function(){})</li>
+			</ul>
+			<h4>jQuery 选择器</h4>
+			<ul>
+				<li>选择器允许您对元素组或单个元素进行操作。</li>
+				<li>jQuery 元素选择器和属性选择器允许您通过标签名、属性名或内容对 HTML 元素进行选择。</li>
+				<li>选择器分为：基础选择器、层级选择器、过滤选择器、属性选择器、表单域选择器。</li>
+			</ul>
+			<h4>基础选择器</h4>
+			<ul>
+				<li>常用的有：ID选择器、Class选择器、标签选择器、通用选择器（$(“*”)）、群组选择器（$(“div,span,p.myclass”)选取所有<div>，<span>，和拥有class为myclass的<p>标签的一组元素。）。</li>
+			</ul>
+			<h4>层级选择器</h4>
+			<ul>
+				<li>常用的有：后代元素选择器、子元素选择器、相邻元素选择器（$(“.one+div”)选取class为one的下一个<div>兄弟元素）、兄弟/同胞元素选择器（$(“#two~div”)选取Id为two的元素后面的所有<div>兄弟元素）</li>
+			</ul>
+			<h4>过滤选择器</h4>
+			<ul>
+				<li>常用的有：:first $(“div:first”)选取所有<div>元素中第1个<div>元素</li>
+				<li>常用的有：:eq $(“input:eq(1)”)选取索引等于1的<input>元素</li>
+				<li>常用的有：:last $(“div:last”)选取所有<div>元素中最后1个<div>元素</li>
+				<li>常用的有：:first $(“div:first”)选取所有<div>元素中第1个<div>元素</li>
+			</ul>
+			<h4>属性选择器</h4>
+			<ul>
+				<li>常用的有：包含属性过滤器 $("selector[attribute]")选择包含给定属性的所有元素</li>
+				<li>常用的有：属性等于过滤器 $("selector[attribute=value]")筛选给定属性等于某特定值的所有元素</li>
+			</ul>
+			<h4>表单域选择器</h4>
+			<ul>
+				<li>常用的有：:input $(“:input”)选取所有<input>,<textarea>,<select>和<button>元素</li>
+				<li>常用的有：:button $(“: button”)选取所有的按钮</li>
+			</ul>
+		</div>
+	</body>
+</html>
