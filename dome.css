@@ -107,10 +107,10 @@ hr{
 	text-decoration: none;
 	
 }
-.mainRight>a:hover{
+.mainRight>.nav>a:hover{
 	color: red;
 }
-.mainRight>a:active{
+.mainRight>.nav>a:active{
 	color: blue;
 }
 .foot{
